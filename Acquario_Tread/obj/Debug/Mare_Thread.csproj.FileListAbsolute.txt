@@ -1,0 +1,14 @@
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\MainWindow.g.cs
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\App.g.cs
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread_MarkupCompile.cache
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread_MarkupCompile.lref
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread.exe
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread.pdb
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\bin\Debug\Acquario_Tread.exe.config
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\bin\Debug\Acquario_Tread.exe
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\bin\Debug\Acquario_Tread.pdb
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\MainWindow.baml
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread.g.resources
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Acquario_Tread.Properties.Resources.resources
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Mare_Thread.csproj.GenerateResource.cache
+C:\Users\lorenzo.fabbri.4g\Desktop\Acquario_Tread\Acquario_Tread\obj\Debug\Mare_Thread.csproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+﻿<Window x:Class="Mare_Thread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Acquario_Tread"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="650.604">
+    <Grid Margin="0,0,-81,0">
+        <Image x:Name="imgSfondo" Source="sfondo.jpg" Margin="1,2,81,-2" RenderTransformOrigin="0.5,0.5"/>
+        <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="90" Margin="44,307,0,0" VerticalAlignment="Top" Width="236" Source="Phish.png"/>
+    </Grid>
+</Window>
