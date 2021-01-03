@@ -15,7 +15,9 @@ namespace Mare_Thread
         public int posPesce1 = 0;
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+
+            lblRisultati.Visibility = Visibility.Hidden;
 
             Thread t1 = new Thread(new ThreadStart(muoviPesce1));
 
@@ -35,7 +37,7 @@ namespace Mare_Thread
 
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    imgPesce1.Margin = new Thickness(posPesce1, 300, 0, 0);
+                    imgPesce1.Margin = new Thickness(posPesce1, 331, 0, 0);
                 }));
             }
         }

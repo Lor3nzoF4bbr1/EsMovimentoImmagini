@@ -6,8 +6,18 @@
         xmlns:local="clr-namespace:Acquario_Tread"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="650.604">
-    <Grid Margin="0,0,-81,0">
-        <Image x:Name="imgSfondo" Source="sfondo.jpg" Margin="1,2,81,-2" RenderTransformOrigin="0.5,0.5"/>
-        <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="90" Margin="44,307,0,0" VerticalAlignment="Top" Width="236" Source="Phish.png"/>
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imgSfondo" Source="sfondo.jpg" Margin="-202,0" RenderTransformOrigin="0.5,0.5" Grid.Column="2"/>
+        <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="73" Margin="0,331,0,0" VerticalAlignment="Top" Width="178" Source="Phish.png" Grid.ColumnSpan="2" Grid.Column="1" />
+        <Image x:Name="imgPesce2" HorizontalAlignment="Left" Height="73" Margin="0,258,0,0" VerticalAlignment="Top" Width="178" Source="pesce-spada-trasp.png" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image x:Name="imgPesce3" HorizontalAlignment="Left" Height="120" Margin="0,149,0,0" VerticalAlignment="Top" Width="178" Source="squalo-trasp.png" Grid.ColumnSpan="3"/>
+        <Label Grid.ColumnSpan="3" Content="Gara di velocità tra pesci" HorizontalAlignment="Left" Margin="13,24,0,0" VerticalAlignment="Top" Height="51" Width="236" FontSize="20"/>
+        <Label x:Name="lblRisultati" Grid.ColumnSpan="3" Content="Risultati:&#xA;1.&#xA;2.&#xA;3." HorizontalAlignment="Left" Height="120" Margin="467,24,0,0" VerticalAlignment="Top" Width="164" FontSize="20"/>
+        <Button x:Name="BtnGara" Grid.ColumnSpan="3" Content="Gareggia" HorizontalAlignment="Left" Height="64" Margin="25,80,0,0" VerticalAlignment="Top" Width="213" FontSize="20"/>
     </Grid>
 </Window>

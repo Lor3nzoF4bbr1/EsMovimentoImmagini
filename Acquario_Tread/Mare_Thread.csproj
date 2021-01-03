@@ -100,5 +100,11 @@
   <ItemGroup>
     <Resource Include="sfondo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pesce-spada-trasp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="squalo-trasp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
