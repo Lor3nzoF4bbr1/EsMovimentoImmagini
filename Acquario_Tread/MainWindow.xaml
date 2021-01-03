@@ -7,16 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="650.604">
     <Grid Margin="0,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="imgSfondo" Source="sfondo.jpg" Margin="-202,0" RenderTransformOrigin="0.5,0.5" Grid.Column="2"/>
-        <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="73" Margin="0,331,0,0" VerticalAlignment="Top" Width="178" Source="Phish.png" Grid.ColumnSpan="2" Grid.Column="1" />
-        <Image x:Name="imgPesce2" HorizontalAlignment="Left" Height="73" Margin="0,258,0,0" VerticalAlignment="Top" Width="178" Source="pesce-spada-trasp.png" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <Image x:Name="imgPesce3" HorizontalAlignment="Left" Height="120" Margin="0,149,0,0" VerticalAlignment="Top" Width="178" Source="squalo-trasp.png" Grid.ColumnSpan="3"/>
-        <Label Grid.ColumnSpan="3" Content="Gara di velocità tra pesci" HorizontalAlignment="Left" Margin="33,44,0,0" VerticalAlignment="Top" Height="71" Width="367" FontSize="30"/>
-        <Label x:Name="lblRisultati" Grid.ColumnSpan="3" Content="Risultati:&#xA;1.&#xA;2.&#xA;3." HorizontalAlignment="Left" Height="120" Margin="467,24,0,0" VerticalAlignment="Top" Width="164" FontSize="20"/>
+        <Image x:Name="imgSfondo" Source="sfondo.jpg" Margin="-202,0" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.RowSpan="2"/>
+        <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="73" Margin="0,331,0,0" VerticalAlignment="Top" Width="178" Source="Phish.png" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2" />
+        <Image x:Name="imgPesce2" HorizontalAlignment="Left" Height="67" Margin="0,227,0,0" VerticalAlignment="Top" Width="178" Source="pesce-spada-trasp.png" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image x:Name="imgPesce3" HorizontalAlignment="Left" Height="120" Margin="0,97,0,0" VerticalAlignment="Top" Width="178" Source="squalo-trasp.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Label Grid.ColumnSpan="3" Content="Gara di velocità tra pesci" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Height="71" Width="367" FontSize="30" Grid.RowSpan="2"/>
+        <Label FontSize="15" Grid.ColumnSpan="3" Content="Pesce 3" HorizontalAlignment="Left" Height="31" Margin="10,76,0,0" VerticalAlignment="Top" Width="197" Grid.RowSpan="2"/>
+        <Label FontSize="15" Grid.ColumnSpan="3" Content="Pesce 2" HorizontalAlignment="Left" Height="33" Margin="10,189,0,0" VerticalAlignment="Top" Width="168" Grid.RowSpan="2"/>
+        <Label FontSize="15" Grid.ColumnSpan="3" Content="Pesce 1" HorizontalAlignment="Left" Height="32" Margin="10,299,0,0" VerticalAlignment="Top" Width="102" Grid.RowSpan="2"/>
+        <ListView x:Name="lstRisultati" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="77" Margin="481,10,10,0" VerticalAlignment="Top" Width="150" Grid.RowSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Classifica" Width="150px" DisplayMemberBinding="{Binding}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

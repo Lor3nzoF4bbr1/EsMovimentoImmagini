@@ -2,7 +2,19 @@
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 using System.Threading;
+
 
 namespace Mare_Thread
 {
@@ -18,11 +30,13 @@ namespace Mare_Thread
         readonly Uri uriPesce3 = new Uri("squalo-trasp.png", UriKind.Relative);
         public int posPesce3 = 0;
 
+        public ObservableCollection<String> risultati;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            lblRisultati.Visibility = Visibility.Hidden;
+            risultati = new ObservableCollection<string>();
 
             Thread t1 = new Thread(new ThreadStart(muoviPesce1));
             Thread t2 = new Thread(new ThreadStart(muoviPesce2));
@@ -42,26 +56,19 @@ namespace Mare_Thread
 
         public void muoviPesce1()
         {
-            while(posPesce1< 463)
+            while (posPesce1 < 463)
             {
-                posPesce1 += 100;
+                posPesce1 += 1;
 
-                Thread.Sleep(TimeSpan.FromMilliseconds(700));
+                Thread.Sleep(TimeSpan.FromMilliseconds(7));
 
-                if (posPesce1 >= 363) //dopo 463 l'immagine dei pesci esce dallo schermo
+                //dopo 463 l'immagine dei pesci esce dallo schermo
+                this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce1.Margin = new Thickness(463, 331, 0, 0);
-                    }));
-                }
-                else
-                {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce1.Margin = new Thickness(posPesce1, 331, 0, 0);
-                    }));
-                }
+                    imgPesce1.Margin = new Thickness(posPesce1, 331, 0, 0);
+                }));
+
+                risultati.Add("Pesce numero 1");
             }
         }
 
@@ -69,49 +76,32 @@ namespace Mare_Thread
         {
             while (posPesce2 < 463)
             {
-                posPesce2 += 100;
+                posPesce2 += 1;
 
-                Thread.Sleep(TimeSpan.FromMilliseconds(700));
+                Thread.Sleep(TimeSpan.FromMilliseconds(7));
 
-                if (posPesce2 >= 363)
+                this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce2.Margin = new Thickness(463, 258, 0, 0);
-                    }));
-                }
-                else
-                {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce2.Margin = new Thickness(posPesce2, 258, 0, 0);
-                    }));
-                }
+                    imgPesce2.Margin = new Thickness(posPesce2, 227, 0, 0);
+                }));
             }
+            risultati.Add("Pesce numero 2");
         }
 
         public void muoviPesce3()
         {
             while (posPesce3 < 463)
             {
-                posPesce3 += 100;
+                posPesce3 += 1;
 
-                Thread.Sleep(TimeSpan.FromMilliseconds(700));
-                if (posPesce3 >= 363)
+                Thread.Sleep(TimeSpan.FromMilliseconds(7));
+
+                this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce3.Margin = new Thickness(463, 149, 0, 0);
-                    }));
-                }
-                else
-                {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        imgPesce3.Margin = new Thickness(posPesce3, 149, 0, 0);
-                    }));
-                }
+                    imgPesce3.Margin = new Thickness(posPesce3, 97, 0, 0);
+                }));
             }
+            risultati.Add("Pesce numero 3");
         }
     }
 }
