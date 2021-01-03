@@ -16,8 +16,7 @@
         <Image x:Name="imgPesce1" HorizontalAlignment="Left" Height="73" Margin="0,331,0,0" VerticalAlignment="Top" Width="178" Source="Phish.png" Grid.ColumnSpan="2" Grid.Column="1" />
         <Image x:Name="imgPesce2" HorizontalAlignment="Left" Height="73" Margin="0,258,0,0" VerticalAlignment="Top" Width="178" Source="pesce-spada-trasp.png" Grid.ColumnSpan="2" Grid.Column="1"/>
         <Image x:Name="imgPesce3" HorizontalAlignment="Left" Height="120" Margin="0,149,0,0" VerticalAlignment="Top" Width="178" Source="squalo-trasp.png" Grid.ColumnSpan="3"/>
-        <Label Grid.ColumnSpan="3" Content="Gara di velocità tra pesci" HorizontalAlignment="Left" Margin="13,24,0,0" VerticalAlignment="Top" Height="51" Width="236" FontSize="20"/>
+        <Label Grid.ColumnSpan="3" Content="Gara di velocità tra pesci" HorizontalAlignment="Left" Margin="33,44,0,0" VerticalAlignment="Top" Height="71" Width="367" FontSize="30"/>
         <Label x:Name="lblRisultati" Grid.ColumnSpan="3" Content="Risultati:&#xA;1.&#xA;2.&#xA;3." HorizontalAlignment="Left" Height="120" Margin="467,24,0,0" VerticalAlignment="Top" Width="164" FontSize="20"/>
-        <Button x:Name="BtnGara" Grid.ColumnSpan="3" Content="Gareggia" HorizontalAlignment="Left" Height="64" Margin="25,80,0,0" VerticalAlignment="Top" Width="213" FontSize="20"/>
     </Grid>
 </Window>
