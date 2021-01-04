@@ -1,0 +1,14 @@
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\bin\Debug\Acquario_Tread.exe.config
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\bin\Debug\Acquario_Tread.exe
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\bin\Debug\Acquario_Tread.pdb
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\MainWindow.g.cs
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\App.g.cs
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread_MarkupCompile.cache
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread_MarkupCompile.lref
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\MainWindow.baml
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.g.resources
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.Properties.Resources.resources
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Thread.csproj.GenerateResource.cache
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Thread.csproj.CoreCompileInputs.cache
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.exe
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.pdb

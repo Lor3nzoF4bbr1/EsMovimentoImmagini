@@ -16,7 +16,7 @@ using System.Collections.ObjectModel;
 using System.Threading;
 
 
-namespace Mare_Thread
+namespace Acquario_Thread
 {
     /// <summary>
     /// Logica di interazione per MainWindow.xaml
@@ -24,19 +24,19 @@ namespace Mare_Thread
     public partial class MainWindow : Window
     {
         readonly Uri uriPesce1 = new Uri("Phish.png", UriKind.Relative);
-        public int posPesce1 = 0;
+        static int posPesce1 = 0;
         readonly Uri uriPesce2 = new Uri("pesce-spada-trasp.png", UriKind.Relative);
-        public int posPesce2 = 0;
+        static int posPesce2 = 0;
         readonly Uri uriPesce3 = new Uri("squalo-trasp.png", UriKind.Relative);
-        public int posPesce3 = 0;
+        static int posPesce3 = 0;
 
-        public ObservableCollection<String> risultati;
+        public ListaClassifica a;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            risultati = new ObservableCollection<string>();
+            a = new ListaClassifica();
 
             Thread t1 = new Thread(new ThreadStart(muoviPesce1));
             Thread t2 = new Thread(new ThreadStart(muoviPesce2));
@@ -58,18 +58,19 @@ namespace Mare_Thread
         {
             while (posPesce1 < 463)
             {
+                //dopo 463 l'immagine dei pesci esce dallo schermo
+
                 posPesce1 += 1;
 
                 Thread.Sleep(TimeSpan.FromMilliseconds(7));
 
-                //dopo 463 l'immagine dei pesci esce dallo schermo
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
                     imgPesce1.Margin = new Thickness(posPesce1, 331, 0, 0);
                 }));
-
-                risultati.Add("Pesce numero 1");
             }
+
+            a.AggiungiARisultati("Pesce numero 1");
         }
 
         public void muoviPesce2()
@@ -85,7 +86,8 @@ namespace Mare_Thread
                     imgPesce2.Margin = new Thickness(posPesce2, 227, 0, 0);
                 }));
             }
-            risultati.Add("Pesce numero 2");
+
+            a.AggiungiARisultati("Pesce numero 2");
         }
 
         public void muoviPesce3()
@@ -101,7 +103,8 @@ namespace Mare_Thread
                     imgPesce3.Margin = new Thickness(posPesce3, 97, 0, 0);
                 }));
             }
-            risultati.Add("Pesce numero 3");
+
+            a.AggiungiARisultati("Pesce numero 3");
         }
     }
 }
