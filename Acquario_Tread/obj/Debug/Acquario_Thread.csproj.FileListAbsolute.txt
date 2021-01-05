@@ -12,3 +12,4 @@ C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread
 C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Thread.csproj.CoreCompileInputs.cache
 C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.exe
 C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Tread.pdb
+C:\Users\fabbr\OneDrive\Desktop\Compiti\tpsit\EsMovimentoImmagini\Acquario_Tread\obj\Debug\Acquario_Thread.csprojAssemblyReference.cache

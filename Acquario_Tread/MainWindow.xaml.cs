@@ -28,15 +28,13 @@ namespace Acquario_Thread
         readonly Uri uriPesce2 = new Uri("pesce-spada-trasp.png", UriKind.Relative);
         static int posPesce2 = 0;
         readonly Uri uriPesce3 = new Uri("squalo-trasp.png", UriKind.Relative);
-        static int posPesce3 = 0;
+        static double posPesce3 = 0;
 
-        public ListaClassifica a;
+        int i = 0;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            a = new ListaClassifica();
 
             Thread t1 = new Thread(new ThreadStart(muoviPesce1));
             Thread t2 = new Thread(new ThreadStart(muoviPesce2));
@@ -70,7 +68,11 @@ namespace Acquario_Thread
                 }));
             }
 
-            a.AggiungiARisultati("Pesce numero 1");
+            if (posPesce1 >= 463)
+            {
+                i++;
+                MessageBox.Show("1 è arrivato " + i + "°");
+            }
         }
 
         public void muoviPesce2()
@@ -87,7 +89,11 @@ namespace Acquario_Thread
                 }));
             }
 
-            a.AggiungiARisultati("Pesce numero 2");
+            if (posPesce2 >= 463)
+            {
+                i++;
+                MessageBox.Show("2 è arrivato " + i + "°");
+            }
         }
 
         public void muoviPesce3()
@@ -104,7 +110,11 @@ namespace Acquario_Thread
                 }));
             }
 
-            a.AggiungiARisultati("Pesce numero 3");
+            if(posPesce3 >= 463)
+            {
+                i++;
+                MessageBox.Show("3 è arrivato " + i + "°");
+            }
         }
     }
 }
